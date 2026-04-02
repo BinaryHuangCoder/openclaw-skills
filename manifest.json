@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "skills": {
     "requirement-to-uat-cases": {
       "name": "需求转 UAT 测试案例工具",
@@ -18,6 +18,15 @@
       "author": "BinaryHuangCoder",
       "dependencies": ["python3"],
       "tags": ["testing", "requirement", "analysis", "html-report", "test-cases"]
+    },
+    "test-case-designer": {
+      "name": "测试案例设计专家",
+      "path": "skills/test-case-designer",
+      "version": "1.0.0",
+      "description": "将测试需求分析结果转换为企业标准格式的结构化、可执行测试案例文档，支持多种输出格式（Excel/HTML/CSV/Markdown），按优先级分级，多测试类型覆盖",
+      "author": "BinaryHuangCoder",
+      "dependencies": ["openpyxl", "pandas"],
+      "tags": ["testing", "test-cases", "excel", "html", "requirement", "enterprise"]
     }
   }
 }

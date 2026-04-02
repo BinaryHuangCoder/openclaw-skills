@@ -10,6 +10,7 @@
 | --- | --- | --- | --- |
 | requirement-to-uat-cases | 需求转 UAT 测试案例工具 | v1.1.0 | 读取 Word 格式的银行业务需求文档，自动生成符合银行规范的用户验收测试（UAT）案例，支持批量处理，减少业务人员手动编写工作量 |
 | test-requirement-analyzer | 测试需求分析专家 | v1.0.0 | 系统化分析需求文档并识别测试验证点，生成结构化的测试分析输出，支持多种文档格式，可输出 HTML 格式的完整测试报告（多表格分 Sheet） |
+| test-case-designer | 测试案例设计专家 | v1.0.0 | 将测试需求分析结果转换为企业标准格式的结构化、可执行测试案例文档，支持多种输出格式（Excel/HTML/CSV/Markdown），按优先级分级，多测试类型覆盖 |
 
 ## 目录结构
 ```
@@ -29,6 +30,10 @@ openclaw-skills/
     │   ├── SKILL.md # 技能说明文档
     │   └── scripts/ # 脚本文件
     │       └── gen_report.py # 报告生成脚本
+    ├── test-case-designer/ # 测试案例设计技能
+    │   ├── SKILL.md # 技能说明文档
+    │   ├── README.md # 技能说明
+    │   └── 测试案例企业标准模版.xlsx # 企业标准模板
     ├── data-processing/ # 数据处理领域技能
     ├── api-integration/ # API 集成领域技能
     └── ... # 其他领域技能
