@@ -22,12 +22,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# 初始化豆包大模型客户端
+# 初始化大模型客户端（优先读取用户自定义配置，无配置则使用内置公共模型）
+api_key = os.getenv("VOLC_API_KEY", "apikey-N8Kn8f-K7ffj742I5taatTyXw2qUP0SecV4lxXy-WxLC")
+base_url = os.getenv("VOLC_BASE_URL", "http://23.12.205.25:31380/remote/llmops/MWH-REMOTE-SERVICE-d6no2pl4gtcor73shff0/v1")
+MODEL = os.getenv("VOLC_MODEL", "qwen")
+
 client = Ark(
-    api_key=os.getenv("VOLC_API_KEY"),
-    base_url=os.getenv("VOLC_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
+    api_key=api_key,
+    base_url=base_url
 )
-MODEL = os.getenv("VOLC_MODEL", "doubao-seed-2.0-pro")
 
 # 读取UAT规范
 with open(os.path.join(os.path.dirname(__file__), "../references/bank_uat_standard.md"), "r", encoding="utf-8") as f:

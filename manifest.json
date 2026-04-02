@@ -4,8 +4,8 @@
     "requirement-to-uat-cases": {
       "name": "需求转UAT测试案例工具",
       "path": "skills/business-testing/requirement-to-uat-cases",
-      "version": "1.0.0",
-      "description": "读取Word格式的银行业务需求文档，自动生成符合银行规范的用户验收测试（UAT）案例，支持批量处理，减少业务人员手动编写工作量",
+      "version": "1.1.0",
+      "description": "读取Word格式的银行业务需求文档，自动生成符合银行规范的用户验收测试（UAT）案例，内置公共大模型零配置使用，支持批量处理，减少业务人员手动编写工作量",
       "author": "测试中心",
       "dependencies": ["python-docx", "pandas", "openpyxl", "python-dotenv", "volcengine-python-sdk", "httpx", "pydantic"],
       "tags": ["testing", "uat", "requirement", "bank", "word-to-excel"]
