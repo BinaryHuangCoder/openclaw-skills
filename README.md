@@ -8,7 +8,6 @@
 ## 现有技能列表
 | 技能 ID | 技能名称 | 版本 | 描述 |
 | --- | --- | --- | --- |
-| requirement-to-uat-cases | 需求转 UAT 测试案例工具 | v1.1.0 | 读取 Word 格式的银行业务需求文档，自动生成符合银行规范的用户验收测试（UAT）案例，支持批量处理，减少业务人员手动编写工作量 |
 | test-requirement-analyzer | 测试需求分析专家 | v1.0.0 | 系统化分析需求文档并识别测试验证点，生成结构化的测试分析输出，支持多种文档格式，可输出 HTML 格式的完整测试报告（多表格分 Sheet） |
 | test-case-designer | 测试案例设计专家 | v1.0.0 | 将测试需求分析结果转换为企业标准格式的结构化、可执行测试案例文档，支持多种输出格式（Excel/HTML/CSV/Markdown），按优先级分级，多测试类型覆盖 |
 
@@ -19,13 +18,6 @@ openclaw-skills/
 ├── manifest.json # 技能清单索引（核心文件，自动生成）
 ├── .gitignore
 └── skills/ # 所有技能存放目录，按功能领域分类
-    ├── business-testing/ # 业务测试领域技能
-    │   └── requirement-to-uat-cases/ # 需求转 UAT 测试案例技能
-    │       ├── skill.json # 技能元数据
-    │       ├── src/ # 源代码
-    │       ├── config/ # 配置文件示例
-    │       ├── docs/ # 技能专用文档
-    │       └── tests/ # 单元测试
     ├── test-requirement-analyzer/ # 测试需求分析技能
     │   ├── SKILL.md # 技能说明文档
     │   └── scripts/ # 脚本文件
